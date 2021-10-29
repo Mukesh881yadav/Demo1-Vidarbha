@@ -1,0 +1,584 @@
+
+:root{
+    --textcolor:#505050;
+    --vdiclor:#1B7642;
+    --agriculture:#0F5C30;
+    --aboutvdic:#3F3531;
+}
+body{
+    margin:0px;
+}
+header{
+    width: 100%;
+    background-color:white;
+    position: fixed;
+    z-index:1;
+    box-shadow: 0px 2px 30px #505050;
+}
+.header_navigation{
+ display: flex;
+ justify-content: space-between;
+ padding:20px 30px;
+ box-shadow: 0 4px 5px gray;
+}
+.container .header_navigation .navigation_logo{
+   display:flex;
+}
+.container .header_navigation .logo_title{
+   margin-top: 6px;
+   width: 100%;
+   margin-left: 10px;
+}
+.container .header_navigation .logo_title p{
+    margin: 0px;
+    color: var( --textcolor);
+    font: 15px 'Fira Sans', sans-serif;
+}
+.navigation_item{
+position: relative;
+}
+.navigation_about li:nth-child(1n+4){
+border-right: 1px solid black;
+}
+.navigation_about li:last-child{
+border-right: none;
+}
+.navigation_about ul{  
+margin:0px;
+position:absolute;   
+left:85px;
+}
+.navigation_about span{
+margin: 4px;
+font:15px 'Fira Sans', sans-serif;
+color:var(--textcolor);
+}
+.navigation_report{
+position: relative;
+top:19px;
+}
+.navigation_report li{
+    border-right: 1px solid black;
+}
+.navigation_report li:last-child{
+border-right:none;
+}
+.navigation_item li{
+font:14px'Lato', sans-serif;
+display: inline-block;
+padding: 0px 10px;
+}
+.navigation_item a{
+text-decoration: none;
+color:var(--textcolor);
+}
+
+.hamburgur i{
+font-size: 30px;
+position: absolute;
+right:10px;
+top:10px;
+display:none;
+}
+/* section VDIC */
+.section_vdic{
+    background-image: url(./img/trackterimg.svg);
+    background-size: cover;
+    height:550px;
+}  
+.vdic{
+background-color: var(--vdiclor);
+padding: 0px 17px;
+font:57px 'Lato', sans-serif;;
+color: white;
+}  
+.agriculture{
+background-color: var(--agriculture);
+padding: 15px 17px;
+font:35px 'Lato', sans-serif;
+color: white;
+}
+.section_vdic{
+position:relative;
+}
+.section_vd{
+position:absolute;
+top: 45%;
+left:12%;
+overflow:hidden;
+height: 300px;
+}
+.section_vd a{
+    text-decoration: none;
+    background-color:white;
+    padding:15px 25px;
+    font:20px 'Lato', sans-serif;
+}
+.section_vd div{
+    margin-bottom:20px ;
+}
+.section_vd div:last-child{
+margin-top: 75px;
+}
+/* manage */
+.manage_develop .manage_irrigation img{
+    max-width: 90%;
+    display: block;
+    height: auto;
+}
+.manage_develop{
+    display: flex;
+    padding: 0px 70px;
+    /* margin: 0px 75px; */
+    margin: 13% 5% 0% 5%;
+}
+.manage_develop .manage_developer p{
+margin: 0px 0px 10px 0px;
+display: inline-block;
+color: gray;
+font: 2.5rem 'Fira Sans', sans-serif;
+margin-left: 12%;
+}
+.manage_develop .manage_vidharabh p{
+    margin: 10px 0px 10px 0px;
+    display: inline-block;
+    color: gray;
+    font: 2.5rem 'Fira Sans', sans-serif;
+    margin-left: 26%;
+}
+.manage_develop .mandal_logo img{
+    max-width: 200%;
+    display: block;
+    height: auto;  
+}
+
+
+
+
+
+.vidharbh_project{
+    margin:80px 0px;
+    background: rgba(255,255,255,0.6);
+    /* background-color: red; */
+}
+.vidharbh_project ul{
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+.vidharbh_project ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+}
+.vidharbh_project ul li .project_title{
+    margin-top: 15px;
+    font: 8px 'Lato', sans-serif;
+    color:var(--textcolor);
+    text-align: center;
+    max-width: 150px;
+}
+
+.about_vdic{
+    display: flex;
+    height: 521px;
+    border: 1px solid red;
+    position: relative;
+}
+.about_vdic .kaka1{
+background-image: url("./img/mukeshyad.png");
+background-size: cover;
+border: 1px solid black;
+background-repeat: no-repeat;
+height:100%;
+width: 40%;
+}
+.about_vdic .kaka1 .about_video{
+    position: absolute;
+    top: 30%;
+    left: 22%; 
+}
+ .about_vdic .kaka1 .about_video iframe{
+    top: 20%;
+    left: 30%;
+    border: 0;
+    width: 100%;
+    height: 100%; 
+}
+.about_vdic .kaka2{
+border: 1px solid green;
+height:100%;
+width:100%;
+background-color: black;
+}
+.about_vdic .kaka2 .about_right{
+color: white;
+position: absolute;
+right: 10%;
+top: 15%;
+width: 30%;
+color: white;
+}
+.about_vdic .kaka2 .about_right h1{
+   font: 36px 'Lato', sans-serif;
+}
+.about_vdic .kaka2 .about_right p{
+ font: 16px 'Lato', sans-serif;
+}
+.about_vdic .kaka2 .about_right a{
+text-decoration: none;
+color: white;
+background-color: #44AF72;
+padding: 10px;
+}
+
+
+.footer_gras{
+transform: translateY(5px );
+margin-top:70px;
+}
+.footer_add{
+    background: rgba(29, 29,29,0.10196078431372549);
+    /* transform: translate(-25%,10%); */
+    height: 340px;
+    padding: 20px 0px;
+    margin: 30px 35px;
+}
+.footer_parentdiv{
+    /* height: 500px ; */
+    display: flex;
+    justify-content: space-between;
+    background-color:var(--vdiclor);
+    /* flex-wrap: wrap; */
+}
+.footer_gras img{
+    width: 100%;
+}    
+.footer_parentdiv .footer_content{
+margin: 30px 50px;
+/* flex-grow: 1; */
+width: 60%;
+
+}
+.footer_content .footer_subcribe{
+padding: 29px 0px 0px 40px;
+
+}
+.footer_parentdiv .footer_subcribe span{
+font:22px 'Lato', sans-serif;
+font-weight: bold;
+color: white;
+}
+.buttonIn {
+		
+		position: relative;
+        margin: 15px 0px;
+        width: 100%;
+	}
+	input {
+	margin: 0px;
+    padding: 0px 10px;
+    width:80%;
+    outline: none;
+    height: 47px;
+    border-radius: 30px;
+    background: rgba(0,0,0,0.10196078431372549);
+    border: none;
+}
+input::placeholder{
+    color: white;
+}
+	button {
+	position: absolute;
+    border-radius: 25px;
+    right: 50px;
+    border: none;
+    font-size: 26px;
+    top: 5px;
+    padding: 8px 35px;
+    cursor: pointer;
+    color:#393939;
+    background-color:white;
+    transform: translate(-50%,0%);
+    font: 16px 'Lato', sans-serif;
+	}
+
+    .footer_parentdiv .links .aboutus ul h1{
+  margin:20px 0px;
+  font: 18px 'Lato', sans-serif;
+  color: white;
+  font-weight: bold;
+    }
+    .footer_parentdiv .links .aboutus li{
+    list-style-type: none;
+    margin-right: 57px;
+    }
+    .footer_parentdiv .links .aboutus a{
+        font: 14px 'Lato', sans-serif;
+        color: white;
+        text-decoration: none;
+    }
+    .links{
+        display: flex;
+    }
+    .help{
+        align-self: flex-end;
+}
+   .copyright{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+   }
+    .copyright span li{
+        font: 12px 'Lato', 'Lato', sans-serif;
+        color: white;
+        opacity: 0.8980392156862745;
+        list-style-type: none;
+    }
+    /* .footer_add{
+        height: 340px;
+        top: 10px;
+        left: 10px;
+        padding: 35spx;
+    } */
+    .contactUs{
+        display: flex;
+        justify-content:flex-start;
+        align-items:center;
+        padding: 19px 24px;
+        max-width: 300px;
+
+    }
+    .contactUs h1{
+        margin: 0px;
+        font: 18px 'Lato','Lato', sans-serif;;
+        color: white;
+        font-weight: bold;
+    }
+    .contactUs p{
+        margin: 0px;
+        font: 14px 'Lato', sans-serif;
+        color: white;
+        opacity:0.6;
+    }
+    .underline{
+        border-bottom: 1px solid gray;
+    }
+    .con_symbol{
+        margin: 0px 15px;
+        color: white;
+    font-size: 20px;
+    }
+.social ul{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.social ul li{
+    list-style-type: none;
+    margin-right: 18px;
+    color: white;;
+}
+.social li h1:first-child{
+    border-right: 1px solid gray;
+    padding-right: 20px;
+    font: 18px 'Lato', sans-serif;
+    color: white;
+}
+.social ul li>i{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1114px) {
+    .about_vdic .kaka2 .about_right{
+        right: 3%;
+        top: 15%;
+    }
+}
+
+@media screen and (max-width:989px){
+    .header_navigation{
+      flex-direction: column;
+      align-items: center;   
+    }
+    .container .header_navigation .navigation_logo{
+        text-align: center;
+        flex-direction:column;
+    }
+    .navigation_about ul {
+        left: 41px;
+    }
+    .about_vdic{
+        display: flex;
+        flex-direction: column;
+    }
+    .about_vdic .kaka1{
+     width: 100%;
+    }
+    .about_vdic .kaka1 .about_video{
+        top: 12%;
+        left: 34%;
+    }
+   
+}
+
+@media screen and (max-width:1046px){
+    .manage_develop .manage_vidharabh p {
+    
+        margin-left: 5%
+    }
+    button{
+        transform:translate(-28%,3%);
+    } 
+}
+
+
+@media screen and (max-width:890px){
+    .about_vdic .kaka2 .about_right{
+        display: contents;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 928px){
+   
+    .footer_parentdiv{
+        /* height: 500px ; */
+        display: flex;
+        justify-content: space-between;
+        background-color:var(--vdiclor);
+        flex-wrap: wrap;
+    }
+    .footer_parentdiv .footer_content {
+        margin: 30px 50px;
+        /* flex-grow: 1; */
+        width: 100%;
+    }
+    .copyright {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        padding: 0px;
+    }
+    .contactUs {
+        /* display: flex; */
+        justify-content: flex-start;
+        align-items: center;
+        padding: 19px 24px;
+        /* max-width: 300px; */
+    }
+    .footer_add{
+        transform: translate(0%,10%);
+        margin: 32px auto;
+        }
+        .contactUs{
+         max-width: 100%;
+        } 
+    }
+@media screen and (max-width: 838px) {
+    .manage_develop  {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    button {
+        padding: 11px 3px;
+        color: #393939;
+        background-color: white;
+        transform: translate(6%,0%);
+        font: 14px 'Lato',sans-s; 
+}
+   .footer_parentdiv .footer_content {
+    margin: 0px 0px;
+    /* width: 64%; */
+}
+   .footer_add {
+    background: rgba(29, 29,29,0.10196078431372549);
+    transform: translate(0%,10%);
+    height: 363px;
+    padding: 0px 0px;
+}
+}
+ @media screen and (max-width: 770px){
+
+    /* .navigation_about ul{
+            position: static;
+    } */
+    .hamburgur i{
+        display:block;
+        }   
+        .navigation_item{
+        display: none;
+        }
+    .links{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .menubar{    
+        display:block;
+    }
+    .navigation_item li{
+        display:block;
+        border-right:none;
+        margin: 12px 0px;
+    }
+    .navigation_about ul{
+        position:static;
+    }
+
+    .navigation_about li:nth-child(1n+4){
+        border-right: none;
+    }
+    .about_vdic .kaka1 .about_video {
+        top: 12%;
+        left: 28%;
+    }
+@media screen and (max-width: 552px){
+    .agriculture{
+        background-color: var(--agriculture);
+        padding: 0px 0px;
+        font: 35px 'Lato', sans-serif;
+        color: white;
+    }  
+    .about_vdic .kaka1 .about_video {
+        top: 12%;
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 398px){
+    .about_vdic .kaka1 .about_video {
+        top: 5%;
+        left: 12%;
+    }
+}
+@media screen and (max-width: 320px){
+    .footer_add{
+    transform: translate(0%,0%);
+    margin: 0px 0px;
+    } 
+    .links{
+        display: block;
+    }
+    .manage_develop .manage_irrigation img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    }
+}
+
